@@ -1,6 +1,6 @@
 /* Enter your Styles below! */
 
-body { 
+/*body { 
 	font-family: Helvetica, sans-serif;
 	font-size: 16px;
 	 }
@@ -31,7 +31,7 @@ blockquote {
 
 header {margin-bottom: 20px;}
 
-/* ensures that your images stretch the width of their containers */
+ ensures that your images stretch the width of their containers 
 img { width: 100%; }
 
 a { 
@@ -42,10 +42,11 @@ a:hover { color: black; }
 
 .grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 40px;
 	width: 60%;
 	margin: auto;
+	text-align:center;
 }
 
 .grid div {
@@ -53,10 +54,193 @@ a:hover { color: black; }
 	padding: 20px;
 }
 
+.navbar div {
+	background-color:#ccc;
+	width:100%;
+
+}
+
+ .circle {
+
+      width: 100px;
+      height: 100px;
+      background: #ccc;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top:-75px;
+
+    }
+
+
 @media only screen and (min-width:768px) {
 
 }
 
 @media only screen and (min-width:1224px) {
+
+} */
+
+
+
+
+body {
+  margin: 0;
+  font-family:apercu;
+  font-weight:300;
+  background:#d14428;
+
+}
+
+.topnav {
+  position: fixed;
+  top:0;
+  width:100%;
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 8px solid #f5dbcc;
+}
+
+.topnav a {
+  float: right;
+  color: #d14428;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: apercu, sans-serif;
+  font-weight:600;
+}
+
+.topnav a:hover {
+  background-color: #d14428;
+  color: black;
+}
+
+.topnav-centered a {
+  float: left;
+  position: none;
+  left: 50%;
+  right:50%;
+
+}
+
+.topnav-right {
+  float: right;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: 0;
+	padding-top: 68vh;
+	position:relative;
+
+
+
+}
+
+.grid-item {
+	background-color: rgba();
+	padding: 20px;
+	font-size: 10vmin;
+	text-align: left;
+	color:white;
+	font-weight:600;
+
+}
+
+img {
+	float:left;
+	width:50%;
+	height:50%;
+	background-color:white;
+}
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('http://www.placekitten.com/1200/700');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  @media screen and (max-width: 600px) {
+
+  }
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+/*menu-halfling*/
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2em;
+    }
+    .pic {
+      width: 100%;
+      height: 100vh;
+    }
+    #one {
+      background-color: red;
+    }
+    #two {
+      background-color: green;
+    }
+    #three {
+      background-color: blue;
+    }
+    .one-active {
+      background-image: url('images/cheeseplate.jpg');
+      background-size: 50% 100vh;
+      background-repeat: no-repeat;
+      position: fixed;
+}
+
+.two-active {
+  background-image: url('images/macandcheese.jpg');
+      background-size: 50% 100vh;
+      background-repeat: no-repeat;
+      position: fixed;
+}
+
+.three-active {
+  background-image: url('images/sandwiches.jpg');
+      background-size: 50% 100vh;
+      background-repeat: no-repeat;
+      position: fixed;
+}
+
+.fixed-one,
+.fixed-two,
+.fixed-three {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
 
 }
