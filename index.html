@@ -1,20 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Vtopia</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Vtopia</title>
+  <style>
+
+.topnav {
+  position: fixed;
+  top:0;
+  width:100vw;
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 8px solid #f5dbcc;
+}
+
+.topnav a {
+  float: right;
+  color: #d14428;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: apercu, sans-serif;
+  font-weight:600;
+}
+
+.topnav a:hover {
+  background-color: #d14428;
+  color: black;
+}
+
+.topnav-centered a {
+  float: left;
+  position: none;
+  left: 50%;
+  right:50%;
+
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+.landing {
+  width:100vw;
+  height:75vh;
+  background-color:#d14428;
+  }
+
+
+h1 {
+  color:#DEC0B8;
+  padding-left:15px;
+  padding-top:15px;
+  font-family: apercu, sans-serif;
+}
+ 
+p {
+  color:#DEC0B8;
+  padding-left:15px;
+  font-family: apercu, sans-serif;
+  line-height: 1.1;
+
+}
+
+h2 {
+  color:#DEC0B8;
+  padding-left:15px;
+  font-family: apercu, sans-serif;
+}
+
+h3 {
+  color:#DEC0B8;
+  padding-left:15px;
+  font-family: apercu, sans-serif;
+}
+
+h4 {
+  color:#DEC0B8;
+  padding-left:15px;
+  padding-bottom: 10px;
+  font-size:12px;
+  font-family: apercu, sans-serif;
+  font-weight:300;
+}
+
+h5 {
+  color:#DEC0B8;
+  padding-left:15px;
+  font-size:12px;
+  font-family: apercu, sans-serif;
+  font-weight:300;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4em;
+}
+.pic {
+  width: 100vw;
+  height: 100vh;
+}
+#one {
+  background-color: #D97D6A;
+}
+#two {
+  background-color: #9E331E;
+}
+#three {
+  background-color: #521B10;
+}
+
+.one-active {
+      background-image: url('images/cheeseplate.jpg');
+      background-size: 100% 100vh;
+      background-repeat: no-repeat;
+      position: fixed;
+
+}
+
+.two-active {
+      background-image: url('images/macandcheese.jpg');
+      background-size: 100% 100vh;
+      background-repeat: no-repeat;
+      position: fixed;
+}
+
+.three-active {
+      background-image: url('images/sandwiches.jpg');
+      background-size: 100% 100vh;
+      background-repeat: no-repeat;
+      position: fixed;
+}
+
+.fixed-one,
+.fixed-two,
+.fixed-three {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 10px;
+  left: 10px;
+
+}
+
+.menu {
+
+
+  height: 75vh; 
+    overflow-y: auto;
+  }
+
+.landing-item {
+  background-color: #d14428;
+  width:100vw;
+  padding-left: 10px;
+  font-size: 10vmin;
+  text-align: left;
+  color:white;
+  font-family:apercu;
+  font-weight:600;
+} 
+
+</style>
 </head>
 
 <body>
-<header>
-
-<!-- Top navigation -->
 <nav>
 <div class="topnav">
 
@@ -26,60 +179,170 @@
   
   <!-- Left-aligned links (default) -->
 
-  <a href="#contact">ORDER ONLINE</a>
-  <a href="#contact">MENU</a>
+  <a href="https://postmates.com/merchant/vtopia-cheese-shop-deli-portland">ORDER ONLINE</a>
+  <a href="#contact">CONTACT</a>
   
   <!-- Right-aligned links -->
   <div class="topnav-right">
-    <a href="#search">CONTACT</a>
-    <a href="#about">ABOUT</a>
+    <a href="#search">ABOUT</a>
+    <a href="#about">MENU</a>
   </div>
-  	  	
+        
 </div>
 
-	</nav>
-
-	<main>
-	
-
-<div class="grid-container">
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>  
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>  
-  <div class="grid-item">Specializing in vegan, <br>raw aged cheese.</div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>  
+  </nav>  
+<div class="landing">
 </div>
 
-
-<div class="parallax"></div>
-<img src="images/macandcheese.jpg">
-
-<div class="parallax"></div>
-
-<div style="height:1000px;background-color:red;font-size:36px">
-This part here is the menu.
-</div>
+  <div class="landing-item">
+    Specializing in vegan, <br>raw-aged cheese.
+    </div>
 
 
+<main>
 
-	<!-- Main content here -->
-	
-	</main>
-	<footer>
-		<!-- footer content here -->
-	<center>	&copy; KW DESIGNS</center>
-	</footer>
-	<!-- link for jquery -->
-	<script
-  	src="https://code.jquery.com/jquery-3.4.1.min.js"
-  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous"></script>
-  	<!-- link for your script file -->
-  	<script src="js/script.js"></script> 
+    <section>
+      <div id="fixed-one" class="pic fixed-one one-active"></div>
+      <div id="fixed-two" class="pic fixed-two"></div>
+      <div id="fixed-three" class="pic fixed-three"></div>
+    </section>
+<!--            <img  class='pic' src="http://placekitten.com/700/600"> -->
 
-</body> 
-</html> 
+
+    <div class="menu">
+    <section id="one" class="menu">
+
+      <h1>Cheese Plates - $6 per cheese piece</h1>
+
+      <p>Plates are garnished with a rotating selection of sweet and savory treats; dolmas, olives, veggies, and fresh organic fruit with house jam. </p>
+
+      <h4>Served with Grand Central Bakery baguettes and La Panzanella crackers<br>
+
+      Gluten Free New Cascadia bread and GF crackers available for $1</h4>
+
+    
+
+      <p>Extra bread and crackers or half GF $2</p>
+
+      <h1>Toasted Cheese Baguette - $6/12</h1>
+
+      <p>Toasted sliced baguette and melting cheese </p>
+
+      <h3>Your choice of dipping sauce: </h3>
+
+      <p>Cashew Cheese - $3<br>
+      Marinara - $2<br>
+      Soup of the day - $2</p>
+
+      <h4>Upgrade to deli case cheese for additional cost </h4>
+
+    </section>
+
+    <section id="two" class="menu">
+
+    <h1>Mac and Cheese - $7/13</h1>
+
+    <p>Served with sauteed onions, cashew-based cheese sauce, comes topped with bread crumbs, soy curl bacon bits, green onions & cheese garnish </p><br> 
+
+    <h5>Gluten free mac and cheese $2 extra</h5>
+
+  
+
+    <h3>Add-Ons </h3>
+    <p>Avocado $2/3</p>
+    <p>Broccoli  $.75/1.5</p>
+    <p>Tomato $.75/1.5</p>
+    <p>Peas $1/2</p>
+    <p>Shiitake Bacon $1.75/3.5</p>
+    <p>Soy Curl Bacon $1/2</p>
+    <p>Fried Buffalo Tofu $1.5/3</p>
+    <p>Scoop o’ Soup $2/3</p>
+    <p>Marinara $1/2</p>
+    <p>Thai chili Paste $1/2</p>
+    <p>Green Curry $1/2</p>
+    <p>Pesto $1.5/3</p>
+    <p>Buffalo Sauce $.5/1</p>
+    <p>House Cheese 1/2oz/1oz</p>
+    <h4></h4>
+
+    </section>
+        <section id="three" class="menu">
+
+          <h1>Sandwiches</h1>
+
+    <p>Gluten Free New Cascadia farmhouse bread $1</p>
+
+    <p>All sandwiches except CB&J include a house salad and dressing of choice </p>
+
+    <h2> Reuben -</h2> <p>Grilled Grand Central Bakery rye house made Russian, sauerkraut, melting cheese and tempeh marinated in red wine, cinnamon, mustard, pepper and cloves $14.50</p>
+
+    <h2>Grilled Mac & Cheese -</h2> <p>Grilled Grand Central Bakery Como bread spread with melting cheese and loaded with our macaroni and cheese $14.5</p>
+
+    <h2>Buffalo Berry -</h2> <p>Toasted Grand Central Bakery Como bread with house-made jam, garlic dill aioli, spicy buffalo tofu, and romaine lettuce $13 </p>
+
+    <h2>Caprese -</h2> <p>Toasted Grand Central Bakery Como bread, our mozzarella, organic tomatoes, organic pesto, white balsamic, olive oil, salt and pepper $15</p>
+
+    <h2>BLshiiT -</h2> <p>Toasted Grand Central Bakery Como bread, house-made organic shiitake bacon, mayo, garlic dill aioli, organic avocado, organic romaine lettuce and organic tomato salt and pepper $14</p>
+
+    <h2>SBLAT -</h2> <p>Toasted Grand Central Bakery Como bread, house-made organic shiitake bacon, mayo, garlic dill aoili, organic avocado, organic $16</p>
+
+    <h2>Toasted Cheese -</h2> <p>Toasted Grand Central Bakery Como bread and melting cheese $9</p>
+
+    <h2>CB&J -</h2> <p>Toasted Grand Central Bakery Como bread, cashew butter and house made jam $7</p>
+
+    <h2>Avocado Toast -</h2>
+    <p>Your choice of rye or Como grand central bakery bread plus a whole organic avocado, salt and pepper and our house made parmesan $7</p>
+
+    <h3>Add-Ons </h3>s
+    <p>Avocado $3</p>
+    <p>Tomato $1.50</p>
+    <p>Onion $.5</p>
+    <p>Shiitake Bacon (1oz) $3.5</p>
+    <p>Soy Curl Bacon (1oz) $2</p>
+    <p>Fried Buffalo Tofu $1.5</p>
+    <p>Pesto $2</p>
+    <p>1oz cheese from deli case $1.75-2.5</p>
+
+    <h4>Substitutions available upon request for an additional charge. </h4>
+        </section>
+  </div>
+  
+  </main>
+  
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<!--   <script src="jquery-visible.js"></script>
+ -->  <script>
+    
+$(function(){
+      
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
+
+  $(window).on('resize scroll', function() {
+    $('.menu').each(function() {
+        var activePicture = $(this).attr('id');
+        console.log(activePicture)
+      if ($(this).isInViewport()) {
+        $('#fixed-' + activePicture).addClass(activePicture + '-active');
+      } else {
+        $('#fixed-' + activePicture).removeClass(activePicture + '-active');
+      }
+    });
+  });
+
+});
+
+  </script>
+</body>
+</html>
